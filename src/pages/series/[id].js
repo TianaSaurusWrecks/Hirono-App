@@ -38,7 +38,7 @@ export default function SeriesDetails() {
                                 alt={figure.name}
                                 width={200}
                                 height={200}
-                                unoptimized
+                                // unoptimized
                             />
 
                             

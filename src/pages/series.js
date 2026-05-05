@@ -21,7 +21,8 @@ export default function Series() {
                     width={260} 
                     height={260}
                     className="series-img"
-                    unoptimized // remove this when project complete, this is just to stop next cacheing images during development
+                    // unoptimized 
+                    // remove this when project complete, this is just to stop next cacheing images during development
                     
                     />
 

@@ -15,7 +15,7 @@ export default function Home() {
         width={1700}
         height={800}
         className="hero-img"
-        unoptimized
+        // unoptimized
       />
 
       <div className="hero-content">

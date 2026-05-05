@@ -28,7 +28,7 @@ export default function Purchase() {
                 width={600}
                 height={600}
                 className="purchase-img"
-                unoptimized           
+                // unoptimized           
         />
     
 

@@ -55,7 +55,7 @@ export default function FigureDetails() {
                 width={800}
                 height={800}
                 className="figure-img"
-                unoptimized
+                // unoptimized
             />
 
             <p className="figure-info">Series: {series.name}</p>

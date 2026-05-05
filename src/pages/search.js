@@ -45,7 +45,7 @@ export default function Search() {
               width={200}
               height={200}
               alt={item.name}
-              unoptimized
+            //   unoptimized
             />
 
             <Link href={`/figure/${item.fullId}`} className="button">

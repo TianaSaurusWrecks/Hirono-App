@@ -11,7 +11,7 @@ export default function NotFound() {
         width={1000}
         height={800}
         alt="Not Found"
-        unoptimized
+        // unoptimized
         />
 
       <p>404 Error - Page not found</p>

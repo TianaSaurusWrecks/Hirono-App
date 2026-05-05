@@ -27,7 +27,7 @@ export default function Collection() {
               width={200}
               height={200}
               alt={item.name}
-              unoptimized
+            //   unoptimized
             />
 
            

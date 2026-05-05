@@ -17,7 +17,7 @@ export default function About() {
                         width={600}
                         height={600}
                         className="about-img"
-                        unoptimized
+                        // unoptimized
                     />
 
         <h2 className="about-text-h2">
