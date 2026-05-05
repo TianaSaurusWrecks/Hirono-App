@@ -1,6 +1,6 @@
 :root {
   // --background: #FBF6F6;
-  --background:#F6EFDE;
+  --background: #f6efde;
   --foreground: #171717;
 }
 
@@ -57,9 +57,8 @@ a {
   padding: 30px;
   padding-bottom: 50px;
   text-align: center;
-  background-color: #F6EFDE;
+  background-color: #f6efde;
   justify-content: center;
-  
 }
 
 .series-card {
@@ -69,20 +68,19 @@ a {
   text-align: center;
   transition: 0.1s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border:3px solid #4c6a22;
-  
+  border: 3px solid #4c6a22;
 }
 
 .series-card:hover {
   transform: scale(1.02);
-   border-color: rgb(235, 217, 111);
+  border-color: rgb(235, 217, 111);
 }
 
 .series-card h2 {
   margin-bottom: 10px;
-  font-family: 'Cormorant Upright', serif;
+  font-family: "Cormorant Upright", serif;
   font-size: 28px;
-  color: #093C5D;
+  color: #093c5d;
 }
 
 .series-card a {
@@ -90,17 +88,15 @@ a {
   margin-top: 10px;
   padding: 8px 12px;
   background: #d1dae1;
-  font-family: 'Cormorant Upright', serif;
+  font-family: "Cormorant Upright", serif;
   font-size: 24px;
   font-weight: bold;
   color: #4c6a22;
   border-radius: 6px;
-  
 }
 
 .series-card a:hover {
-  background-color: #F7DB91;
-
+  background-color: #f7db91;
 }
 
 // Navbar
@@ -108,11 +104,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 40px ;
-  background: #8EB486;
+  padding: 25px 40px;
+  background: #8eb486;
   color: white;
   font-size: 22px;
-  font-family: 'Cormorant Upright', serif;
+  font-family: "Cormorant Upright", serif;
 }
 
 .navbar a {
@@ -120,7 +116,6 @@ a {
   color: white;
   font-weight: bold;
   font-size: 28px;
-  
 }
 
 .navbar a:hover {
@@ -133,12 +128,9 @@ a {
   border: none;
   font-size: 16px;
   width: 220px;
-  background-color:#F6EFDE;
+  background-color: #f6efde;
   color: #333;
-
 }
-
-
 
 //homepage
 .hero-container {
@@ -153,48 +145,36 @@ a {
 .hero-img {
   margin-top: 50px;
   border-radius: 12px;
-  width:100%;
+  width: 100%;
   height: auto;
   max-height: 900px;
   max-width: 1800px;
   // border: 15px solid #E4DFB5;
-  
 }
 
-
-
-
 .hero-btn {
-
   display: inline-block;
   margin-top: 10;
   margin-bottom: 20px;
   padding: 12px 20px;
   background: #d1dae1;
-  font-family: 'Cormorant Upright', serif;
+  font-family: "Cormorant Upright", serif;
   font-size: 22px;
   font-weight: bold;
   color: #4c6a22;
   border-radius: 6px;
-  
 }
 
 .hero-btn:hover {
-  background-color: #F7DB91;
-
+  background-color: #f7db91;
 }
 
 .tagline {
   margin-top: 20px;
   font-size: 44px;
-  font-family: 'Cormorant Upright', serif;
-  color: #4C5C2D;
-  
-  
+  font-family: "Cormorant Upright", serif;
+  color: #4c5c2d;
 }
-
-
-
 
 // series/[id].js page
 .figures-container {
@@ -212,10 +192,9 @@ a {
   text-align: center;
   transition: 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border:3px solid #4c6a22;
+  border: 3px solid #4c6a22;
   min-width: 200px;
   max-width: 250px;
-  
 }
 
 .figure-card:hover {
@@ -223,13 +202,11 @@ a {
   border-color: rgb(235, 217, 111);
 }
 
-
 .figure-card h2 {
   margin-bottom: 10px;
-  font-family: 'Cormorant Upright', serif;
+  font-family: "Cormorant Upright", serif;
   font-size: 26px;
-  color: #093C5D;
-  
+  color: #093c5d;
 }
 
 .figure-card a {
@@ -237,7 +214,7 @@ a {
   margin-top: 10px;
   padding: 8px 12px;
   background: #d1dae1;
-  font-family: 'Cormorant Upright', serif;
+  font-family: "Cormorant Upright", serif;
   font-size: 20px;
   font-weight: bold;
   color: #4c6a22;
@@ -245,17 +222,15 @@ a {
 }
 
 .figure-card a:hover {
-  background-color: #F7DB91;
-
+  background-color: #f7db91;
 }
-
 
 .button {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 12px;
   background: #d1dae1;
-  font-family: 'Cormorant Upright', serif;
+  font-family: "Cormorant Upright", serif;
   font-size: 20px;
   font-weight: bold;
   color: #4c6a22;
@@ -266,24 +241,23 @@ a {
 }
 
 .button:hover {
-  background-color: #F7DB91;
+  background-color: #f7db91;
 }
 
 //Footer
 .footer {
   margin-top: 50px;
   padding: 20px;
-  background: #8EB486;
+  background: #8eb486;
   text-align: center;
   color: white;
-  font-family: 'Cormorant Upright', serif;
+  font-family: "Cormorant Upright", serif;
   font-size: 28px;
 }
 
 .footer-links a {
   margin: 0 15px;
   font-weight: bold;
-  
 }
 
 .footer-links a:hover {
@@ -302,7 +276,6 @@ a {
   padding-bottom: 40px;
   font-size: 30px;
   margin-bottom: 30px;
-  
 }
 .notfound-img {
   background: whitesmoke;
@@ -318,7 +291,7 @@ a {
 }
 .notfound h1 {
   font-size: 44px;
-  color: #4C5C2D;
+  color: #4c5c2d;
 }
 
 .notfound p {
@@ -339,7 +312,7 @@ a {
   font-size: 42px;
   margin: 24px;
   text-align: center;
-  color: #4C5C2D;
+  color: #4c5c2d;
 }
 
 .series-info {
@@ -363,52 +336,48 @@ a {
   margin: 10px 0;
   margin-bottom: 20px;
   text-align: center;
-  font-family: 'Cormorant Upright', serif;
-  color: #4C5C2D;
+  font-family: "Cormorant Upright", serif;
+  color: #4c5c2d;
 }
 .figure-info {
   font-size: 28px;
   margin: 10px 0;
   text-align: center;
-  font-family: 'Cormorant Upright', serif;
+  font-family: "Cormorant Upright", serif;
 }
 
 .collection {
   font-size: 42px;
   margin: 32px;
   text-align: center;
-  color: #4C5C2D;
+  color: #4c5c2d;
 }
 .results {
   font-size: 42px;
   margin: 24px;
   text-align: center;
-  color: #4C5C2D;
+  color: #4c5c2d;
 }
 
 .about-text-h2 {
   font-size: 28px;
-  margin: 40px 120px  40px 120px;
+  margin: 40px 120px 40px 120px;
   text-align: center;
-  color: #4C5C2D;
+  color: #4c5c2d;
 }
 .about-text {
   font-size: 24px;
-  margin: 40px 120px  15px 120px;
+  margin: 40px 120px 15px 120px;
   text-align: center;
-  
 }
 .about-app {
   font-size: 24px;
-  margin: 40px 120px  40px 120px;
+  margin: 40px 120px 40px 120px;
   text-align: center;
-  
-  
 }
 .about-img {
-  
   border-radius: 12px;
-  width:50%;
+  width: 50%;
   height: auto;
   display: block;
   margin: 50px auto;
@@ -417,7 +386,6 @@ a {
   border-radius: 12px;
   border: 12px solid whitesmoke;
   margin-top: 80px;
-  
 }
 .about-btn {
   display: flex;
@@ -428,20 +396,18 @@ a {
 // Purchase Page
 .purchase-text-h2 {
   font-size: 28px;
-  margin: 120px 120px  50px 120px;
+  margin: 120px 120px 50px 120px;
   text-align: center;
-  color: #4C5C2D;
-  
+  color: #4c5c2d;
 }
 .purchase-btn {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  
 }
 .purchase-img {
   border-radius: 12px;
-  width:70%;
+  width: 70%;
   height: auto;
   display: block;
   margin: 50px auto;
@@ -450,9 +416,7 @@ a {
   border-radius: 12px;
   margin-top: 150px;
   border: 12px solid whitesmoke;
-  
 }
-
 
 // Contact Page
 .contact-form {
@@ -461,7 +425,7 @@ a {
   gap: 20px;
   max-width: 500px;
   margin: 40px auto;
-  background-color: #EADBC8;
+  background-color: #eadbc8;
   padding: 30px;
   border-radius: 10px;
   margin-top: 180px;
@@ -478,10 +442,9 @@ a {
 .form-group label {
   margin-bottom: 12px;
   font-size: 24px;
-  font-family: 'Cormorant Upright', serif;
+  font-family: "Cormorant Upright", serif;
   color: #4c5c2d;
   text-align: center;
-  
 }
 
 /* inputs and text area */
@@ -493,15 +456,13 @@ a {
   color: #333;
   font-size: 16px;
   background-color: #fffdf7;
-  font-family: 'Poppins', sans-serif;
-  
+  font-family: "Poppins", sans-serif;
 }
 .contact-btn-area {
   display: flex;
   justify-content: center;
   padding: 18px;
   font-size: 28px;
-  
 }
 
 .contact-button {
@@ -509,7 +470,7 @@ a {
   margin-top: 10px;
   padding: 12px 82px;
   background: #d1dae1;
-  font-family: 'Cormorant Upright', serif;
+  font-family: "Cormorant Upright", serif;
   font-size: 24px;
   font-weight: bold;
   color: #4c6a22;
@@ -520,7 +481,7 @@ a {
 }
 
 .contact-button:hover {
-  background-color: #F7DB91;
+  background-color: #f7db91;
 }
 
 // thanks page
@@ -535,7 +496,7 @@ a {
   margin-top: 10px;
   padding: 12px 32px;
   background: #d1dae1;
-  font-family: 'Cormorant Upright', serif;
+  font-family: "Cormorant Upright", serif;
   font-size: 24px;
   font-weight: bold;
   color: #4c6a22;
@@ -545,11 +506,8 @@ a {
   text-align: center;
 }
 .home-button:hover {
-  background-color: #F7DB91;
+  background-color: #f7db91;
 }
-
-
-
 
 /* browser autofill override */
 input:-webkit-autofill,
@@ -559,13 +517,19 @@ textarea:-webkit-autofill {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-
 // responsiveness
 
 @media (max-width: 1024px) {
   .hero-img {
     margin-bottom: 50px;
     margin-top: 90px;
+  }
+  .notfound-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 40 auto;
   }
 }
 
@@ -604,11 +568,17 @@ textarea:-webkit-autofill {
     margin-bottom: 40px;
     margin-top: 40px;
   }
-  
+
+  .notfound-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 40 auto;
+  }
 }
 
 @media (max-width: 800px) {
-  
   .figure-img {
     width: 100%;
     max-width: 400px;
@@ -616,7 +586,7 @@ textarea:-webkit-autofill {
     margin: 0 auto;
     display: block;
   }
-    .series-img {
+  .series-img {
     width: 100%;
     max-width: 400px;
     height: auto;
@@ -628,12 +598,19 @@ textarea:-webkit-autofill {
     margin: 10px;
   }
   .purchase-img {
-  margin-top: 70px;
-}
+    margin-top: 70px;
+  }
+
+  .notfound-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 40 auto;
+  }
 }
 
 @media (max-width: 600px) {
-  
   .figure-img {
     width: 100%;
     max-width: 350px;
@@ -656,33 +633,37 @@ textarea:-webkit-autofill {
     margin-bottom: 20px;
     margin-top: 30px;
   }
-   .about-text {
+  .about-text {
     font-size: 24px;
-  margin: 35px;
-  text-align: center;
+    margin: 35px;
+    text-align: center;
   }
   .purchase-text-h2 {
-  font-size: 24px;
-  margin: 35px;
-  margin-top: 40px;
-  text-align: center;
-  color: #4C5C2D;
-  
-}
-.purchase-btn {
-  margin-bottom: 2px;
-}
-.purchase-img {
-  margin-top: 60px;
-}
-.about-img {
-  width: 260px;
+    font-size: 24px;
+    margin: 35px;
+    margin-top: 40px;
+    text-align: center;
+    color: #4c5c2d;
+  }
+  .purchase-btn {
+    margin-bottom: 2px;
+  }
+  .purchase-img {
+    margin-top: 60px;
+  }
+  .about-img {
+    width: 260px;
+  }
+  .notfound-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 40 auto;
+  }
 }
 
-}
-
-@media (max-width: 400px) {
-  
+@media (max-width: 414px) {
   .figure-img {
     width: 100%;
     max-width: 350px;
@@ -706,17 +687,24 @@ textarea:-webkit-autofill {
     margin-top: 20px;
   }
   .about-text {
-  font-size: 24px;
-  margin: 35px;
-  text-align: center;
+    font-size: 24px;
+    margin: 35px;
+    text-align: center;
   }
   .purchase-text-h2 {
-  font-size: 24px;
-  margin: 35px;
-  text-align: center;
-  color: #4C5C2D;
-}
-.about-img {
-  width: 250px;
-}
+    font-size: 24px;
+    margin: 35px;
+    text-align: center;
+    color: #4c5c2d;
+  }
+  .about-img {
+    width: 250px;
+  }
+  .notfound-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 40 auto;
+  }
 }
