@@ -5,9 +5,17 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Home() {
   return (
+
+    <>
+    <Head>
+      <title>Home | Hirono Collection</title>
+      <meta name="description" content="Browse Hirono Figures & Organise your Collection" />
+    </Head>
+
     <div className="hero-container">
       <Image
         src="/images/hero.jpg"
@@ -28,5 +36,6 @@ export default function Home() {
         <h2 className="tagline">Explore Hirono Series and Figurines</h2>
       </div>
     </div>
+    </>
   );
 }
