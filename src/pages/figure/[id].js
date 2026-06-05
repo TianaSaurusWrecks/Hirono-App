@@ -33,7 +33,7 @@ export default function FigureDetails() {
     useEffect(() => {
         if (!id) return;
 
-        setInWishlist(isInWishlist(id));
+        setInWishlist(isInWishlist(id)); // setState is running inside a useEffect, causing an extra render, 
         setInCollection(isInCollection(id));
     }, [id]);
 
