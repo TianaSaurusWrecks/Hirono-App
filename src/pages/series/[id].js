@@ -1,22 +1,11 @@
-import { useRouter } from "next/router";
+
 import Link from "next/link";
 import Image from "next/image";
-import seriesData from "../../data/seriesData";
 
-export default function SeriesDetails() {
-    const router = useRouter();
-    const { id } = router.query;
 
-    // Find the selected series
-    const series = seriesData.find((s) => s.id === id);
+export default function SeriesDetails({ series }) {
+   
 
-    // Handle Loading state
-    if (!router.isReady) return <p>Loading...</p>;
-
-    if(!series) {
-        router.replace("/404");
-        return null;
-    }
 
     return (
         <div>
@@ -55,7 +44,42 @@ export default function SeriesDetails() {
         </div>
     </div>
                     
-    );                  
-}                      
+    )       
+}   
+    
+    // which series page to build
+    export async function getStaticPaths() {
+
+        const response = await fetch("http://localhost:3000/api/series");
+        const seriesData = await response.json();
+
+        const paths = seriesData.map((series) => ({
+            params: {
+                id: series.id,
+            },
+        }));
+
+        return {
+            paths,
+            fallback: false,
+        };
+    }
+    
+    // fetch data
+    export async function getStaticProps({ params }) {
+
+        const response = await fetch(
+            `http://localhost:3000/api/series/${params.id}`
+        );
+
+        const series = await response.json();
+
+        return {
+            props: {
+                series,
+            },
+        };
+    }
+                  
                         
                         

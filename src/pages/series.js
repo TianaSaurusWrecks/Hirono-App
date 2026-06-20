@@ -1,8 +1,8 @@
 import Link from "next/link";
-import seriesData from "../data/seriesData";
+
 import Image from "next/image";
 
-export default function Series() {
+export default function Series( { seriesData }) {
     return (
         <div className="series-page">
              <h1 className="collection">Series </h1>
@@ -37,3 +37,19 @@ export default function Series() {
         </div>
     );
 }
+
+export async function getStaticProps() {
+    // fetch data from API endpoint
+    const response = await fetch("http://localhost:3000/api/series");
+
+    // convert JSON response into JavaScript objects
+    const seriesData = await response.json();
+
+    return {
+        props: {
+            seriesData,
+        },
+    };
+}
+
+

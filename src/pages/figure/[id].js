@@ -1,6 +1,6 @@
 // This page will show details for a specific figure based on the ID in the URL
 import { useRouter } from "next/router";
-import seriesData from "../../data/seriesData";
+
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { 
@@ -15,15 +15,9 @@ import {
 
 
 // This page will be at /figure/[id]
-export default function FigureDetails() {
+export default function FigureDetails({ figure}) {
     const router = useRouter();
     const { id } = router.query;
-
-    // The ID is in the format "seriesId-figureId"
-    const [seriesId, figureId] = id ? id.split("-") : [];
-
-    const series = seriesData.find((s) => s.id === seriesId);
-    const figure = series?.figures.find((f) => f.id === figureId);
 
     //state
     const [inWishlist, setInWishlist] = useState(false);
@@ -36,13 +30,6 @@ export default function FigureDetails() {
         setInWishlist(isInWishlist(id)); // setState is running inside a useEffect, causing an extra render, 
         setInCollection(isInCollection(id));
     }, [id]);
-
-    if (!router.isReady) return <p>Loading...</p>
-
-    if (!series || !figure) {
-        router.replace("/404");
-        return null;
-    }
     
 
     return (
@@ -58,7 +45,7 @@ export default function FigureDetails() {
                 // unoptimized
             />
 
-            <p className="figure-info">Series: {series.name}</p>
+            <p className="figure-info">Series: {figure.seriesName}</p>
             <p className="figure-info">Rarity: {figure.rarity}</p>
 
 
@@ -111,3 +98,46 @@ export default function FigureDetails() {
         </div>
     );
 }
+
+export async function getStaticPaths() {
+    const response = await fetch(
+        "http://localhost:3000/api/series"
+    );
+
+    const seriesData = await response.json();
+
+    const paths = [];
+
+    seriesData.forEach((series) => {
+        series.figures.forEach((figure) => {
+            paths.push({
+                params: {
+                    id: `${series.id}-${figure.id}`,
+                },
+            });
+        });
+    });
+
+    return {
+        paths,
+        fallback: false,
+    };
+}
+
+export async function getStaticProps({ params }) {
+
+    const response = await fetch(
+        `http://localhost:3000/api/figure/${params.id}`
+    );
+
+    const figure = await response.json();
+
+    return {
+        props: {
+            figure,
+        },
+    };
+
+}
+
+
