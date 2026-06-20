@@ -101,7 +101,7 @@ export default function FigureDetails({ figure}) {
 
 export async function getStaticPaths() {
     const response = await fetch(
-        "http://localhost:3000/api/series"
+        `${process.env.NEXT_PUBLIC_SITE_URL}/api/series`
     );
 
     const seriesData = await response.json();
@@ -127,7 +127,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
 
     const response = await fetch(
-        `http://localhost:3000/api/figure/${params.id}`
+        `${process.env.NEXT_PUBLIC_SITE_URL}/api/figure/${params.id}`
     );
 
     const figure = await response.json();
