@@ -38,10 +38,9 @@ export default function Series( { seriesData }) {
     );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     // fetch data from API endpoint
     const response = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/series`
-        
     );
 
     // convert JSON response into JavaScript objects
