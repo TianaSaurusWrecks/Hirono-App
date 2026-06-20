@@ -50,7 +50,8 @@ export default function SeriesDetails({ series }) {
     // which series page to build
     export async function getStaticPaths() {
 
-        const response = await fetch("http://localhost:3000/api/series");
+        const response = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/series`
+            );
         const seriesData = await response.json();
 
         const paths = seriesData.map((series) => ({
@@ -69,7 +70,7 @@ export default function SeriesDetails({ series }) {
     export async function getStaticProps({ params }) {
 
         const response = await fetch(
-            `http://localhost:3000/api/series/${params.id}`
+            `${process.env.NEXT_PUBLIC_SITE_URL}/api/series/${params.id}`
         );
 
         const series = await response.json();

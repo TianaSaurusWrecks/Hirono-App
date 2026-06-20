@@ -40,7 +40,9 @@ export default function Series( { seriesData }) {
 
 export async function getStaticProps() {
     // fetch data from API endpoint
-    const response = await fetch("http://localhost:3000/api/series");
+    const response = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/series`
+        
+    );
 
     // convert JSON response into JavaScript objects
     const seriesData = await response.json();
