@@ -47,31 +47,17 @@ export default function SeriesDetails({ series }) {
     )       
 }   
     
-    // which series page to build
-    export async function getStaticPaths() {
-
-        const response = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/series`
-            );
-        const seriesData = await response.json();
-
-        const paths = seriesData.map((series) => ({
-            params: {
-                id: series.id,
-            },
-        }));
-
-        return {
-            paths,
-            fallback: false,
-        };
-    }
     
     // fetch data
-    export async function getStaticProps({ params }) {
+    export async function getServerSideProps({ params }) {
 
         const response = await fetch(
             `${process.env.NEXT_PUBLIC_SITE_URL}/api/series/${params.id}`
         );
+
+        if (!response.ok) {
+            return { notFound: true };
+        }
 
         const series = await response.json();
 

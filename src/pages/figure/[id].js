@@ -99,36 +99,16 @@ export default function FigureDetails({ figure}) {
     );
 }
 
-export async function getStaticPaths() {
-    const response = await fetch(
-        `${process.env.NEXT_PUBLIC_SITE_URL}/api/series`
-    );
 
-    const seriesData = await response.json();
-
-    const paths = [];
-
-    seriesData.forEach((series) => {
-        series.figures.forEach((figure) => {
-            paths.push({
-                params: {
-                    id: `${series.id}-${figure.id}`,
-                },
-            });
-        });
-    });
-
-    return {
-        paths,
-        fallback: false,
-    };
-}
-
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
 
     const response = await fetch(
         `${process.env.NEXT_PUBLIC_SITE_URL}/api/figure/${params.id}`
     );
+
+    if (!response.ok) {
+        return {notFound: true };
+    }
 
     const figure = await response.json();
 
