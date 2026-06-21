@@ -1,15 +1,7 @@
 :root {
-  // --background: #FBF6F6;
   --background: #f6efde;
   --foreground: #171717;
 }
-
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --background: #0a0a0a;
-//     --foreground: #ededed;
-//   }
-// }
 
 html,
 body {
@@ -26,7 +18,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  // font-family: Arial, Helvetica, sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -99,7 +91,6 @@ a {
   background-color: #f7db91;
 }
 
-// Navbar
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -132,7 +123,6 @@ a {
   color: #333;
 }
 
-//homepage
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -149,7 +139,6 @@ a {
   height: auto;
   max-height: 900px;
   max-width: 1800px;
-  // border: 15px solid #E4DFB5;
 }
 
 .hero-btn {
@@ -176,7 +165,6 @@ a {
   color: #4c5c2d;
 }
 
-// series/[id].js page
 .figures-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
@@ -244,7 +232,6 @@ a {
   background-color: #f7db91;
 }
 
-//Footer
 .footer {
   margin-top: 50px;
   padding: 20px;
@@ -269,7 +256,6 @@ a {
   font-size: 22px;
 }
 
-// 404 page
 .notfound {
   text-align: center;
   padding-top: 60px;
@@ -284,7 +270,7 @@ a {
   text-align: center;
   transition: 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  // border:3px solid #4c6a22;
+
   min-width: 40px;
   margin-top: 60px;
   margin-bottom: 40px;
@@ -305,7 +291,7 @@ a {
 }
 
 .content {
-  flex: 1; // pushes the footer down
+  flex: 1;
 }
 
 .series-name {
@@ -330,7 +316,6 @@ a {
   text-align: center;
 }
 
-//individual figures page
 .figure-name {
   font-size: 38px;
   margin: 10px 0;
@@ -393,7 +378,6 @@ a {
   margin-top: 10px;
 }
 
-// Purchase Page
 .purchase-text-h2 {
   font-size: 28px;
   margin: 120px 120px 50px 120px;
@@ -418,7 +402,6 @@ a {
   border: 12px solid whitesmoke;
 }
 
-// Contact Page
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -431,14 +414,12 @@ a {
   margin-top: 180px;
 }
 
-/* each field group */
 .form-group {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-// labels
 .form-group label {
   margin-bottom: 12px;
   font-size: 24px;
@@ -447,7 +428,6 @@ a {
   text-align: center;
 }
 
-/* inputs and text area */
 .contact-form input,
 .contact-form textarea {
   padding: 14px;
@@ -484,8 +464,6 @@ a {
   background-color: #f7db91;
 }
 
-// thanks page
-
 .home-btn-wrapper {
   display: flex;
   justify-content: center;
@@ -509,15 +487,12 @@ a {
   background-color: #f7db91;
 }
 
-/* browser autofill override */
 input:-webkit-autofill,
 textarea:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px #fffdf7 inset;
   -webkit-text-fill-color: #333;
   transition: background-color 5000s ease-in-out 0s;
 }
-
-// responsiveness
 
 @media (max-width: 1024px) {
   .hero-img {
